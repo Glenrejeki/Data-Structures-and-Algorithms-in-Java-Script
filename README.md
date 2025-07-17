@@ -88,6 +88,26 @@ Belajar Struktur Data & Algoritma menggunakan JavaScript berdasarkan tutorial da
   - Menghapus elemen terakhir.
   - Mengurangi nilai `this.length`.
 
+## 🧩 Catatan Tambahan: Chunking Array
+
+Saat membuat fungsi `chunk()` untuk membagi array menjadi beberapa bagian kecil (chunks), penting untuk **menaikkan nilai index** pada setiap iterasi.
+
+Contoh:
+
+```js
+const chunk = (array, size) => {
+  const chunked = []
+  let index = 0
+
+  while (index < array.length) {
+    const chunk = array.slice(index, index + size)
+    chunked.push(chunk)
+    index += size // ⬅️ WAJIB! Untuk menghindari infinite loop
+  }
+
+  return chunked
+}
+
 ---
 
 ## ✍️ Penulis
