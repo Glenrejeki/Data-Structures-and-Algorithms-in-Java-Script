@@ -108,6 +108,8 @@ const chunk = (array, size) => {
   return chunked
 }
 
+```
+
 ---
 
 ## ✍️ Penulis
