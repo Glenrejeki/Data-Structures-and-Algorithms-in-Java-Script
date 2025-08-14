@@ -118,6 +118,3 @@ Glen Rejeki Sitorus — Mahasiswa Informatika IT Del
 
 
 
-### Umum
-- [ ] Item belum dicentang
-- [x] Item sudah dicentang
